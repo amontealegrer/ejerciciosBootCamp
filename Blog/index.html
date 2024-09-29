@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Plantilla tipo Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .row.content {
+            height: 1500px
+        }
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        @media screen {
+            max-width: 767px) {
+                .sidenav {
+                    height: auto;
+                    padding: 15px;
+                }
+
+                .row.content {
+                    height: auto;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h1>Blog de Alexander</h1>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Section1">Inicio</a></li>
+                    <li class="active"><a href="#Section2">Amigos</a></li>
+                    <li class="active"><a href="#Section3">Familia</a></li>
+                    <li class="active"><a href="#Section4">Fotos</a></li>
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscando...">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <h4><small>MENSAJES RECIENTES</small></h4>
+                <hr>
+                <h2>ME ENCANTA VIAJAR</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Publicado por Alexander Montealegre Ramirez, Sep
+                    09,2019.</h5>
+                <h5><span class="label label-danger">Viajes</span><span class="label label-primary">Proyectos</span>
+                </h5><br>
+                <p>Viajar es mi pasión. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus
+                    possimus consequatur quisquam impedit molestias? Necessitatibus totam eligendi, voluptatem suscipit
+                    vitae, sed doloremque amet rerum adipisci deleniti molestiae ad cum? Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Nisi quasi quia minima dolor obcaecati. Illo fugit amet cupiditate.
+                    Ratione laudantium labore numquam sunt aperiam. Et sed quaerat neque sapientek fugiat.</p>
+                <br><br>
+                <h4><small>MENSAJES RECIENTES</small></h4>
+                <hr>
+                <h2>Blog Oficial</h2>
+                <h5><span class="glyphicon glyphicon-time">Publicado por Alexander Montealegre Ramirez, Sep
+                        09,2019.</span></h5>
+                <h5><span class="label label-success">Revisar</span></h5><br>
+                <p>Sus mensajes recientes... Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eaque beatae
+                    dolorem aut incidunt quae voluptate illo impedit accusamus, sint provident neque. Possimus modi
+                    perferendis impedit fugit voluptatem illum explicabo! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quasi perspiciatis consequuntur accusamus aliquam eum impedit repudiandae neque
+                    aliquid aut, debitis tempora dignissimos similique quibusdam sint fugiat ipsum natus est maxime.</p>
+                <hr>
+                <h4>Comentarios</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+                <br><br>
+                <p><span class="badge">2</span>Comentarios:</p><br>
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="img/persona1.jpeg" class="rounded-circle" height="65" width="65" alt="avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Jhon <small>Sep 09,2019, 9:12 PM</small></h4>
+                        <p>Muy bien, cada día.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt cum
+                            placeat autem reprehenderit iusto! Exercitationem facere unde illum suscipit porro cum velit
+                            tempora ab dolores veniam! Doloribus aut velit repellendus!</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img src="img/persona2.jpeg" class="rounded-circle" height="65" width="65" alt="avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Lian <small>Sep 09,2019, 9:12 PM</small></h4>
+                        <p>Muy bien, cada día.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt cum
+                            placeat autem reprehenderit iusto! Exercitationem facere unde illum suscipit porro cum velit
+                            tempora ab dolores veniam! Doloribus aut velit repellendus!</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <p>Pie de página</p>
+    </footer>
+</body>
+</html>
