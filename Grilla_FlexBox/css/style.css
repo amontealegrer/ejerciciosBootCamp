@@ -11,7 +11,7 @@ body{
 
 .container{
     display: flex;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
     justify-content:space-between;
     width: 80%;
     max-width: 800px;
@@ -40,4 +40,16 @@ body{
     background: #dc143c;
     font-weight: bold;
     color: #fff;
+}
+
+@media (min-width: 576px){
+    .card{
+        width: 48%;
+    }
+}
+
+@media(min-width:992px){
+    .card{
+        width: 23%;
+    }
 }
