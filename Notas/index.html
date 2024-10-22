@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Notas - Cymetria</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Notas de Matemáticas - Instituto Cymetria</h1>
+        <form id="notaForm">
+
+            <label for="nombre">Nombre del estudiante: </label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nota1">Nota 1 (10%):</label>
+            <input type="number" id="nota1" step="0.01" min="0" max="5" required>
+
+            <label for="nota2">Nota 2 (30%):</label>
+            <input type="number" id="nota2" step="0.01" min="0" max="5" required>
+
+            <label for="nota3">Nota 3 (40%):</label>
+            <input type="number" id="nota3" step="0.01" min="0" max="5" required>
+
+            <label for="nota4">Nota 4 (20%):</label>
+            <input type="number" id="nota4" step="0.01" min="0" max="5" required>
+
+            <button type="submit">Calcular</button>
+
+        </form>
+        <div id="resultado" class="resultado">
+            <!-- Aqui se mostrará el Resultado -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
